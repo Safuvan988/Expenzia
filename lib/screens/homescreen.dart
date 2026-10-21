@@ -41,8 +41,8 @@ class _HomeScreenState extends State<HomeScreen> {
       body: IndexedStack(index: _index, children: pages),
       floatingActionButton: FloatingActionButton(
         onPressed: _openAdd,
-        backgroundColor: Colors.white,
-        foregroundColor: AppColors.primary,
+        backgroundColor: AppColors.primary,
+        foregroundColor: Colors.white,
         elevation: 2,
         shape: const CircleBorder(),
         child: const Icon(Icons.add, size: 30),
@@ -298,15 +298,15 @@ class _HomeTab extends StatelessWidget {
   }
 }
 
-class _ComingSoon extends StatelessWidget {
-  final String title;
-  const _ComingSoon({required this.title});
+// class _ComingSoon extends StatelessWidget {
+//   final String title;
+//   const _ComingSoon({required this.title});
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(title)),
-      body: const Center(child: Text('Coming soon')),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(title: Text(title)),
+//       body: const Center(child: Text('Coming soon')),
+//     );
+//   }
+// }
